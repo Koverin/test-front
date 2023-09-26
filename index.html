@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="./index.js"></script>
-    <script src="./js/swiper.js"></script>
+    <script src="./js/slider.js"></script>
   </head>
 
   <body>
@@ -301,28 +301,188 @@
       <section class="amount">
         <h2 class="amount__title">ile będę zarabiał?</h2>
         <p class="amount__text">Twoja inwestycja</p>
-        <div class="center">
-          <div class="slider">
-            <div class="show-value">
-              <span id="current-value">1100</span>
-              <input
-                type="range"
-                id="custom-slider"
-                min="1100"
-                max="500000"
-                value="1100"
-                steps="1"
-              />
-              <div class="range">
-                <div>1100</div>
-                <div>500000</div>
+
+        <div class="amount__wrap">
+          <div class="center">
+            <div class="slider">
+              <div class="show-value">
+                <span id="current-value">1100</span>
+                <input
+                  type="range"
+                  id="custom-slider"
+                  min="1100"
+                  max="500000"
+                  value="1100"
+                  steps="1"
+                />
+                <div class="range">
+                  <div>1100</div>
+                  <div>500000+ PLN</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="amount__box">
+          <p class="amount__subtext">Zarobisz</p>
+          <p class="amount__suptext">7194 PLN</p>
+        </div>
+        <button class="amount__button" type="submit">Dołącz do nas</button>
+      </section>
+      <!-- Benefit -->
+      <section class="container benefit">
+        <div class="benefit__box">
+          <p class="benefit__title">
+            Dlaczego jest to korzystne dla przeciętnego obywatela
+          </p>
+          <ul class="benefit__list">
+            <li class="benefit__item">
+              <div class="benefit__img-box1">
+                <!-- <img class="benefit__img" src="./images/stats.png" /> -->
+              </div>
+              <p class="benefit__text">Znaczny zysk przy pewnym ryzyku</p>
+            </li>
+            <li class="benefit__item">
+              <div class="benefit__img-box2">
+                <!-- <img class="benefit__img" src="./images/hand.png" /> -->
+              </div>
+              <p class="benefit__text">
+                Jedno z najbardziej dochodowych archiwów
+              </p>
+            </li>
+            <li class="benefit__item">
+              <div class="benefit__img-box3">
+                <!-- <img class="benefit__img" src="./images/calculation.png" /> -->
+              </div>
+              <p class="benefit__text">
+                Szybka wypłata środków na dowolną Polską kartę Bankową
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="next">
+          <p class="next__title">
+            Jak zostać akcjonariuszem i zarobić na gazie 118 440 PLN ? ?
+          </p>
+          <ul class="next__list">
+            <li class="next__item">
+              <p class="next__text">
+                1.Wypełnij formularz rejestracyjny na tej stronie
+              </p>
+            </li>
+            <li class="next__item">
+              <p class="next__text">
+                2.Poczekaj i zadzwoń do specjalisty, który przygotuje Twoje
+                portfolio i zrobi wszystko za Ciebie
+              </p>
+            </li>
+            <li class="next__item">
+              <p class="next__text">
+                3.Otrzymuj dzienne zyski ze sprzedaży gazu
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Repeat -->
+      <section class="repeat">
+        <div class="hero__box">
+          <div class="background-image main-image"></div>
+          <div class="background-image overlay-image overlay-image1"></div>
+          <div class="background-image overlay-image overlay-image2"></div>
+          <div class="form-container">
+            <form name="registration" class="form">
+              <strong class="form__title">Zarejestruj się</strong>
+              <div class="form__group" role="group">
+                <label class="form__label">
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Imię"
+                /></label>
+                <label class="form__label">
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Nazwisko"
+                /></label>
+                <label class="form__label">
+                  <input
+                    class="form__input"
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="E-mail"
+                /></label>
+                <label class="form__label">
+                  <input class="form__input" type="tel" name="tel" required />
+                  <span class="form__span">+48</span>
+                </label>
+                <button type="submit" class="form__button">
+                  zarejestruj się
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer class="container footer">
+      <div class="footer__inner">
+        <div class="footer__wrapper">
+          <div class="footer__box">
+            <address class="footer__addres">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Polskie Elektrownie Jądrowe sp. z o. o.</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link"
+                    >Aleje Jerozolimskie 132/136, 02-305 Warszawa</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Tel.: (+48 22) 340 2980 </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="./images/free-icon-linkedin-2496097.png" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="./images/free-icon-twitter-logo-2496110.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a href="" class="contact__link">Kontakt</a>
+            </li>
+            <li class="contact__item">
+              <a href="" class="contact__link">Polityka prywatności</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
