@@ -39,9 +39,45 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icon.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
-    <!-- <main>
+    <!-- Mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icon.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-list">
+        <li class="mobile-list__item">
+          <a href="#" class="mobile-list__link">O projekcie</a>
+        </li>
+        <li class="mobile-list__item">
+          <a href="#" class="mobile-list__link">O spółce</a>
+        </li>
+        <li class="mobile-list__item">
+          <a href="#" class="mobile-list__link">Opinie</a>
+        </li>
+        <li class="mobile-list__item">
+          <a href="#" class="mobile-list__link">Dla inwestorów</a>
+        </li>
+        <li class="mobile-list__item">
+          <a href="#" class="mobile-list__link">Jak zacząć?</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Main -->
+    <main>
       <section class="hero container">
         <div class="hero__box">
           <div class="background-image main-image"></div>
@@ -77,6 +113,7 @@
                 /></label>
                 <label class="form__label">
                   <input class="form__input" type="tel" name="tel" required />
+
                   <span class="form__span">+48</span>
                 </label>
                 <button type="submit" class="form__button">
@@ -98,9 +135,9 @@
           </ul>
           <div class="near-block__textarea"></div>
         </div>
-      </section> -->
-    <!-- O projekcie -->
-    <!-- <section class="project">
+      </section>
+      <!-- O projekcie -->
+      <section class="project">
         <div class="project__box">
           <img
             src="./images/human.png"
@@ -140,9 +177,9 @@
             </div>
           </div>
         </div>
-      </section> -->
-    <!-- O spółce -->
-    <!-- <section class="about container">
+      </section>
+      <!-- O spółce -->
+      <section class="about">
         <div class="about__box">
           <h2 class="about__title">O spółce</h2>
           <ul class="about__list">
@@ -183,9 +220,9 @@
           Sądowego pod numerem KRS: 0000347416, kapitał zakładowy 2.948.201.430
           zł, NIP: 701 021 82 99, REGON: 142242032.
         </p>
-      </section> -->
-    <!-- Swiper -->
-    <!-- <section class="container swiper-section">
+      </section>
+      <!-- Swiper -->
+      <section class="container swiper-section">
         <h2 class="swiper-title">Opinie</h2>
         <div class="customer__conteiner">
           <div class="swiper">
@@ -296,9 +333,9 @@
             </div>
           </div>
         </div>
-      </section> -->
-    <!-- Amount -->
-    <!-- <section class="amount">
+      </section>
+      <!-- Amount -->
+      <section class="amount">
         <h2 class="amount__title">ile będę zarabiał?</h2>
         <p class="amount__text">Twoja inwestycja</p>
 
@@ -328,32 +365,26 @@
           <p class="amount__suptext">7194 PLN</p>
         </div>
         <button class="amount__button" type="submit">Dołącz do nas</button>
-      </section> -->
-    <!-- Benefit -->
-    <!-- <section class="container benefit">
+      </section>
+      <!-- Benefit -->
+      <!-- <section class="container benefit">
         <div class="benefit__box">
           <p class="benefit__title">
             Dlaczego jest to korzystne dla przeciętnego obywatela
           </p>
           <ul class="benefit__list">
             <li class="benefit__item">
-              <div class="benefit__img-box1">
-                
-              </div>
+              <div class="benefit__img-box1"></div>
               <p class="benefit__text">Znaczny zysk przy pewnym ryzyku</p>
             </li>
             <li class="benefit__item">
-              <div class="benefit__img-box2">
-                
-              </div>
+              <div class="benefit__img-box2"></div>
               <p class="benefit__text">
                 Jedno z najbardziej dochodowych archiwów
               </p>
             </li>
             <li class="benefit__item">
-              <div class="benefit__img-box3">
-                
-              </div>
+              <div class="benefit__img-box3"></div>
               <p class="benefit__text">
                 Szybka wypłata środków na dowolną Polską kartę Bankową
               </p>
@@ -385,8 +416,8 @@
         </div>
       </section> -->
 
-    <!-- Repeat -->
-    <!-- <section class="repeat">
+      <!-- Repeat -->
+      <!-- <section class="repeat">
         <div class="hero__box">
           <div class="background-image main-image"></div>
           <div class="background-image overlay-image overlay-image1"></div>
@@ -430,8 +461,8 @@
             </form>
           </div>
         </div>
-      </section>
-    </main> -->
+      </section> -->
+    </main>
 
     <!-- Footer -->
     <!-- <footer class="container footer">
@@ -484,5 +515,14 @@
       </div>
     </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
