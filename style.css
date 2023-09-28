@@ -348,22 +348,6 @@ body {
   opacity: 0.6;
 }
 
-.form__span {
-  position: absolute;
-  left: 0;
-  text-align: center;
-  width: 84px;
-  height: 60px;
-  background-color: #d9d9d9;
-  color: #000;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
   .form__span {
     width: 70px;
@@ -845,9 +829,13 @@ body {
 /* Amount */
 
 .amount {
+  height: 508px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: blue;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .amount__title {
@@ -868,18 +856,53 @@ body {
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.66px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .amount__wrap {
   position: relative;
   margin-top: 100px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .amount__wrap {
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .amount__wrap {
+    width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .amount__box {
-  padding-left: 100px;
   padding-top: 50px;
   margin-bottom: 45px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .amount__box {
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .amount__box {
+    width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .amount__subtext {
@@ -892,6 +915,9 @@ body {
 }
 
 .amount__button {
+  position: absolute;
+  bottom: 60px;
+  left: 38%;
   padding: 18px 100px;
   font-size: 22px;
   font-style: normal;
@@ -899,8 +925,22 @@ body {
   line-height: 130%;
   color: blue;
   border: none;
-  margin-left: 500px;
-  margin-right: auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .amount__button {
+    padding: 13px 65px;
+    font-size: 20px;
+    left: 18%;
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .amount__button {
+    left: 27%;
+    width: 350px;
+  }
 }
 
 .amount__button:hover {
@@ -919,6 +959,18 @@ body {
 .slider {
   width: 1200px;
   height: 100px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .slider {
+    width: 350px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .slider {
+    width: 650px;
+  }
 }
 
 .slider .show-value {
@@ -957,6 +1009,18 @@ body {
   background-color: white;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .slider input[type="range"] {
+    width: 350px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .slider input[type="range"] {
+    width: 650px;
+  }
+}
+
 .slider input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 25px;
@@ -987,15 +1051,38 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 20px;
 
   display: flex;
   gap: 285px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit {
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .benefit {
+    gap: 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .benefit__box {
   width: 490px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit__box {
+    width: 350px;
+  }
 }
 
 .benefit__title {
@@ -1050,6 +1137,12 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit__img-box2 {
+    width: 60px;
+  }
+}
+
 .benefit__img-box3 {
   width: 50px;
   height: 50px;
@@ -1062,6 +1155,12 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit__img-box3 {
+    width: 78px;
+  }
+}
+
 /* Next */
 
 .next {
@@ -1069,6 +1168,13 @@ body {
   height: 270px;
   background-color: white;
   border-radius: 8px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .next {
+    width: 350px;
+    height: 300px;
+  }
 }
 
 .next__title {
@@ -1085,10 +1191,24 @@ body {
   padding-right: 50px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .next__list {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 .next__text {
   width: 390px;
   font-size: 17px;
   font-weight: 400;
+  margin-bottom: 7px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .next__text {
+    width: 320px;
+  }
 }
 
 /* Repeat */
@@ -1111,6 +1231,18 @@ body {
   width: 400px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__addres {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .footer__addres {
+    text-align: center;
+  }
+}
+
 .footer__link {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
@@ -1126,6 +1258,18 @@ body {
   margin-right: 380px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .social {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .social {
+    margin: 0;
+  }
+}
+
 .social__list {
   display: flex;
   gap: 3px;
@@ -1133,13 +1277,45 @@ body {
 
 .footer__inner {
   display: flex;
+  justify-content: space-between;
+
   border-top: 3px solid grey;
   padding-top: 10px;
   padding-bottom: 30px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
 .footer__wrapper {
   margin-right: 230px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__wrapper {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .footer__wrapper {
+    margin: 0;
+  }
 }
 
 .contact__list {
@@ -1236,4 +1412,14 @@ body {
 
 .mobile-list__link:hover {
   color: lightgrey;
+}
+
+/* Country lisb */
+
+.iti {
+  width: 100%;
+}
+
+.iti__selected-dial-code {
+  font-size: 18px;
 }

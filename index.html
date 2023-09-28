@@ -11,6 +11,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="./index.js"></script>
     <script src="./js/slider.js"></script>
@@ -91,30 +97,32 @@
                   <input
                     class="form__input"
                     type="text"
-                    name="name"
-                    required
+                    name="first_name"
                     placeholder="Imię"
+                    required
                 /></label>
                 <label class="form__label">
                   <input
                     class="form__input"
                     type="text"
-                    name="name"
-                    required
+                    name="last_name"
                     placeholder="Nazwisko"
+                    required
                 /></label>
                 <label class="form__label">
                   <input
                     class="form__input"
                     type="email"
                     name="email"
-                    required
                     placeholder="E-mail"
                 /></label>
                 <label class="form__label">
-                  <input class="form__input" type="tel" name="tel" required />
-
-                  <span class="form__span">+48</span>
+                  <input
+                    class="form__input intl-tel-input"
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                  />
                 </label>
                 <button type="submit" class="form__button">
                   zarejestruj się
@@ -364,10 +372,11 @@
           <p class="amount__subtext">Zarobisz</p>
           <p class="amount__suptext">7194 PLN</p>
         </div>
+
         <button class="amount__button" type="submit">Dołącz do nas</button>
       </section>
       <!-- Benefit -->
-      <!-- <section class="container benefit">
+      <section class="benefit">
         <div class="benefit__box">
           <p class="benefit__title">
             Dlaczego jest to korzystne dla przeciętnego obywatela
@@ -414,23 +423,23 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Repeat -->
-      <!-- <section class="repeat">
+      <section class="repeat">
         <div class="hero__box">
           <div class="background-image main-image"></div>
           <div class="background-image overlay-image overlay-image1"></div>
           <div class="background-image overlay-image overlay-image2"></div>
           <div class="form-container">
-            <form name="registration" class="form">
+            <form name="registration1" class="form">
               <strong class="form__title">Zarejestruj się</strong>
               <div class="form__group" role="group">
                 <label class="form__label">
                   <input
                     class="form__input"
                     type="text"
-                    name="name"
+                    name="first_name"
                     required
                     placeholder="Imię"
                 /></label>
@@ -438,7 +447,7 @@
                   <input
                     class="form__input"
                     type="text"
-                    name="name"
+                    name="last_name"
                     required
                     placeholder="Nazwisko"
                 /></label>
@@ -451,8 +460,12 @@
                     placeholder="E-mail"
                 /></label>
                 <label class="form__label">
-                  <input class="form__input" type="tel" name="tel" required />
-                  <span class="form__span">+48</span>
+                  <input
+                    class="form__input intl-tel-input"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                  />
                 </label>
                 <button type="submit" class="form__button">
                   zarejestruj się
@@ -461,11 +474,11 @@
             </form>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer -->
-    <!-- <footer class="container footer">
+    <footer class="container footer">
       <div class="footer__inner">
         <div class="footer__wrapper">
           <div class="footer__box">
@@ -513,8 +526,9 @@
           </ul>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
 
     <!-- Mobile menu -->
     <script
